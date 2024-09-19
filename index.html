@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Photo Gallery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .container{
+      display:flex;
+      flex-direction: column;
+    }
+    .row img{
+        width:200px;
+        height:200px;
+    }
+    h1{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @media screen and (max-width: 600px) {
+       .row img{
+        width:100%;
+        height:auto;
+       }
+       .container{
+        flex-direction: column;
+        }
+        h1{
+        font-size: 2rem;
+        }
+        .container{
+        flex-direction: column;
+        }
+
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1 class="h1 text-primary ">Image Gallery</h1>
+  <div class="container  border-dark align-items-center">
+    <div class="row align-items-center border border-radius-2">
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mt-4 ">
+        <img src="./naruto.jpg" alt="Image 1" class="img-fluid">
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mt-4">
+        <img src="./photo-1590523278191-995cbcda646b.jpeg" alt="Image 2" class="img-fluid">
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mt-4">
+        <img src="./sasuke.webp" alt="Image 3" class="img-fluid">
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mt-4">
+        <img src="./bluelagoon.avif" alt="Image 4" class="img-fluid">
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mt-4">
+        <img src="./sasuke.webp" alt="Image 3" class="img-fluid">
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mt-4">
+        <img src="./naruto.jpg" alt="Image 1" class="img-fluid">
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mt-4">
+        <img src="./photo-1590523278191-995cbcda646b.jpeg" alt="Image 2" class="img-fluid">
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4 mt-4">
+        <img src="./bluelagoon.avif" alt="Image 4" class="img-fluid">
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
